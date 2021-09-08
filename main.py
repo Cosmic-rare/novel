@@ -13,9 +13,10 @@ from tqdm import tqdm
 import ssl
 import sys
 
-from func import check_url, setup
+from func import check_url, setup, get_part
 
 from mode.all import mode_all
+from mode.one_page import mode_one
 
 '''引き数の取得'''
 args = sys.argv
@@ -29,7 +30,7 @@ if 3 <= len(args):
             elif args[2] == "2":
                 print("2")
             elif args[2] == "3":
-                print("3")
+                mode_one(args[1], get_part(args[1]))
             else:
                 print("mode Error")
         else:
