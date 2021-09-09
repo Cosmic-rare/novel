@@ -23,3 +23,13 @@ def get_part(ncode):
             break
     
     return int(part)
+
+def get_parts(ncode):
+    while True:
+        start = input('Start > ')
+        end = input('End > ')
+        start_url = 'https://ncode.syosetu.com/{}/{}'.format(ncode, start)
+        end_url = 'https://ncode.syosetu.com/{}/{}'.format(ncode, end)
+        if check_url(start_url) and check_url(end_url):
+            break
+            return start, end
