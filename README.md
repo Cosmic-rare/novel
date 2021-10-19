@@ -1,12 +1,13 @@
-<<<<<<< HEAD
-# sky-monitor
-=======
 # novel
 小説家になろうを取得するコード？
+
+# セットアップ
 
 ```bash
 $ pip install -r requirements.txt
 ```
+
+# 使う
 
 ```bash
 $ python main.py <str:ncode> <int:mode>
@@ -15,4 +16,11 @@ $ python main.py <str:ncode> <int:mode>
 
 リゼロのncode
 `n2267be`
->>>>>>> f8f2e914088436cd90884b8c743f9b16277ba740
+
+## コピーする
+
+```bash
+$ bash copy.sh
+```
+
+`ncode`とcopy先の`path`を入力する

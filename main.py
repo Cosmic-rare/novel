@@ -1,6 +1,3 @@
-'''
-モジュールのインポート
-'''
 from bs4.element import NavigableString
 from mode.all import mode_all
 import time
@@ -16,7 +13,6 @@ from mode.all import mode_all
 from mode.one_page import mode_one
 from mode.range import mode_range
 
-'''引き数の取得'''
 args = sys.argv
 if 3 <= len(args):
     if args[2].isdigit():
@@ -38,15 +34,3 @@ if 3 <= len(args):
         print('Argument is not digit')
 else:
     print('Arguments are too short')
-
-
-
-
-# 全取得
-# ページ指定はそのページのみ
-# 範囲はまず入力
-# 整数である＆存在するなら取ってくる
-# ないならもう一度
-# 辞書を指定するとパスを入力させる
-# 入力されたパスに保存
-# そうでない場合作って保存
